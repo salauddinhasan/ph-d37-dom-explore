@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom explore</title>
+
+</head>
+<body>
+     <h1> I have a plane</h1>
+     <h1> This is new bangladesh</h1>
+
+
+     <li>Home</li>
+     <li>About</li>
+     <li>Contact</li>
+     <li>Phone</li>
+
+
+     <script>
+        const liCollection = document.getElementsByTagName('li');
+
+        console.log(liCollection);
+
+        for(const li of liCollection) {
+            console.log(li.innerText)
+        }
+
+        // heading tag
+        const headTag = document.getElementsByTagName('h1');
+
+        for(const heading of headTag) {
+            console.log(heading.innerText);
+        }
+         
+     </script>
+     <script src="dom.js"></script>
+</body>
+</html>
