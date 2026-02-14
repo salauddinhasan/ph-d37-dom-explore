@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dom explore</title>
 
+    <style>
+        h1{
+            color:  tomato;
+        }
+        li {
+            color: green;
+        }
+    </style>
+
 </head>
 <body>
      <h1> I have a plane</h1>
@@ -16,6 +25,32 @@
      <li>Contact</li>
      <li>Phone</li>
 
+
+
+     <!-- id &  class  -->
+ 
+     <section>
+        <h1 id="title">Welcome to my DOM</h1>
+        <ul>
+            <li>Shafayet</li>
+            <li class="forgen">Donobash</li>
+            <li>jalali</li>
+            <li>Dom De re baba</li>
+        </ul>
+     </section>
+
+     <section>
+       <h1>Foods I Loved to eat</h1>
+        <ul>
+            <li>Rice</li>
+            <li>Potato</li>
+            <li>Fish</li>
+            <li>Lentils</li>
+            <li class="forgen">Burger</li>
+            <li class="forgen">Pizz</li>
+            <li class="forgen">pasta</li>
+        </ul>
+     </section>
 
      <script>
         const liCollection = document.getElementsByTagName('li');
@@ -31,6 +66,15 @@
 
         for(const heading of headTag) {
             console.log(heading.innerText);
+        }
+
+
+        // class & id
+        const forgentElement = document.getElementsByClassName('forgen');
+        console.log(forgentElement);
+
+        for(const element of forgentElement) {
+            console.log(element.innerText);
         }
          
      </script>
